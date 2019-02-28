@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.App {
+  height: 100%;
+  font-family: Roboto;
+  display: grid;
+  grid-template-rows: repeat(auto, 4);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  grid-template-rows: repeat(6, 80px);
+  grid-gap: 6px;
+}
+
+.board-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+.dashboard {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  font-size: 18px;
+}
+
+.header {
+  font-size: 32px;
+  text-align: center;
+  grid-column: 1/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.matches {
+  grid-column: 4/5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset {
+  grid-column: 5/6;
+  grid-row: 1/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset-btn {
+  height: 40px;
+  width: 80px;
+  font-size: 14px;
+  border-radius: 5px;
+  background: #006e6d;
+  color: white;
+}
+
+.reset-btn:hover {
+  background: #005554;
+  cursor: pointer;
+}
+
+.time {
+  grid-column: 4/5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

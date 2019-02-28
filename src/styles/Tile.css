@@ -1,0 +1,52 @@
+.flipped {
+  pointer-events: none;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.matched {
+  animation-duration: 3s;
+  animation-name: match;
+}
+
+.no-match {
+  animation-duration: 3s;
+  animation-name: no-match;
+}
+
+.tile {
+  background: #006e6d;
+  border-radius: 5px;
+  user-select: none;
+}
+
+.tile:hover {
+  background: #005554;
+  cursor: pointer;
+}
+
+.unflipped {
+  filter: opacity(0%);
+}
+
+@keyframes match {
+  from {
+    box-shadow: 0px 0px 0px 4px #00a591;
+  }
+
+  to {
+    box-shadow: 0;
+  }
+}
+
+@keyframes no-match {
+  from {
+    box-shadow: 0px 0px 0px 4px #9e1030;
+  }
+
+  to {
+    box-shadow: 0;
+  }
+}
