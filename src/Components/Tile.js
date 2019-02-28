@@ -6,11 +6,12 @@ export default ({ handleFlip, flipCount, tileData }) => {
   return (
     <div className="tile" onClick={() => handleFlip(uniqueId)}>
       <img
+        alt={alt}
         className={`${flipped || matched ? 'flipped' : 'unflipped'} ${matched &&
           'matched'} ${flipCount > 1 && !matched && 'no-match'}`}
-        alt={alt}
-        src={image}
+        draggable="false"
         height="80"
+        src={image}
       />
     </div>
   );

@@ -5,3 +5,17 @@
   grid-column: 1/3;
   font-size: 12px;
 }
+
+.pipe {
+  padding: 0 5px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #006e6d;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  color: #005554;
+}
