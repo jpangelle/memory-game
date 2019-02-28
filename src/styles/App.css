@@ -67,6 +67,17 @@
   cursor: pointer;
 }
 
+.reset-btn:disabled,
+.reset-btn[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.reset-btn[disabled]:hover {
+  cursor: not-allowed;
+}
+
 .time {
   grid-column: 4/5;
   display: flex;

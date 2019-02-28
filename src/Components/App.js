@@ -54,8 +54,8 @@ export default class App extends Component {
   };
 
   handleFlip = async uniqueId => {
-    const { board, flipCount, flipped, timerStatus } = this.state;
-    if (!timerStatus) {
+    const { board, flipCount, flipped, solved, timerStatus } = this.state;
+    if (!timerStatus && !solved) {
       this.startTimer();
     }
     const currentFlip = board.find(tile => tile.uniqueId === uniqueId);
@@ -158,7 +158,11 @@ export default class App extends Component {
           <div className="matches">Matches: {matchCount}/15</div>
           <Timer time={time} />
           <div className="reset">
-            <button className="reset-btn" onClick={this.handleReset}>
+            <button
+              disabled={!time && true}
+              className="reset-btn"
+              onClick={this.handleReset}
+            >
               Reset
             </button>
           </div>
